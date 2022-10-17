@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Admin Panel</h1>
+    </div>
+    <div id="main_container">
+      <div id="side_bar">
+        <h2>Add Product</h2>
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Product Price">
+        <input type="text" id="description" placeholder="Product Description">
+        <input type="date" id="delivery" placeholder="Estimated Delivery">
+        <input type="url" id="image" placeholder="Product Image URL">
+        <button id="add_product" onclick="postData()">Add Product</button>
+        <h3>Sort Based On Price</h3>
+        <button id="sort-low-to-high" onclick="slh()">Sort Low To High</button>
+        <button id="sort-high-to-low" onclick="shl()">Sort High To Low</button>
+        <h3>Filter By Price</h3>
+        <button id="greater-than" onclick="filtergtr()">Price > 4000</button>
+        <button id="less-than" onclick="filterles()">Price <= 4000</button>
+      </div>
+      <div id="container"></div>
+    </div>
+  </body>
+</html>
+<script src="./main.js">
+  
+</script>
